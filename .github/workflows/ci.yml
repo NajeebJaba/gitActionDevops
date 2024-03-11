@@ -24,7 +24,14 @@ jobs:
     - name: Run tests
       run: |
         python -m unittest discover -s ./test -p '*mean_teams.py'
-    
+
+    - name: Upload Test Report
+      if: always()
+      uses: actions/upload-artifact@v2
+      with:
+        name: Test Report
+        path: https://github.com/NajeebJaba/BallDontLieBack-EndProject.git
+
               
 
 

@@ -1,9 +1,24 @@
-name: my-ci-flow
+name: my-ci-flow test
 on: [push]
 jobs:
-  build:
-    runs-on:ubuntu-latest
+  test:
+    runs-on: ubuntu-latest
 
   steps:
-    -name: Run one-line command
-    run:
+    - name: Run one-line command "repo"
+
+      users: actions
+
+    - name: Set up python 3.11
+      users: actions
+      with:
+        python version: 3.11.1
+
+    - name: Install Dependencies
+      run: |
+        pyhton -m pip install --upgrade pip
+        pip install requests
+
+    - name: run tests
+      run:
+    

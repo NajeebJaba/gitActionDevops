@@ -6,4 +6,4 @@ jobs:
 
   steps:
     -name: Run one-line command
-    run:
+    run: aaaaaaa

@@ -1,4 +1,4 @@
-name: Python application test workflow
+name: Python-test-workflow
 
 on: [push]
 

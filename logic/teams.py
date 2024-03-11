@@ -12,7 +12,7 @@ class Teams(APIWrapper):
         return None
 
     def get_team_by_id(self, team_id):
-        result = self.my_api.api_get_request(f'https://www.balldontlie.io/api/v1/teams/{team_id}')
+        result = self.my_api.api_get_request(f'https://api.balldontlie.io/v1/teams/{1}')
         if result is not None:
             return result.json()
         return None

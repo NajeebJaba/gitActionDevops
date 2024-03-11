@@ -36,8 +36,7 @@ jobs:
 
     - name: Run Tests
       run: |
-        # Navigate to the test directory if needed or adjust the command to run your tests
-        python -m unittest discover -s ./test_layer -p '*_teams.py'
+        python -m unittest discover -s ./test -p '*_teams.py'
 
     - name: Upload Test Report
       if: always()

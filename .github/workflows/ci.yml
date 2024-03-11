@@ -5,20 +5,12 @@ jobs:
     runs-on: ubuntu-latest
 
   steps:
-    - name: Run one-line command "repo"
+    - name: Checkout Repository
+      uses: actions/checkout@v2
 
-      users: actions
 
-    - name: Set up python 3.11
-      users: actions
-      with:
-        python version: 3.11.1
 
-    - name: Install Dependencies
-      run: |
-        pyhton -m pip install --upgrade pip
-        pip install requests
 
-    - name: run tests
-      run:
+
+
     
